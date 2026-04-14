@@ -1,0 +1,111 @@
+body /* define as configuração para toda a pagina (oque é visivel para o usuario)*/
+    {font-family: Arial; /* o font-family define a fonte do texto*/
+    background: #f0f2f5;/*Cor de fundo da pagina (cinza claro)*/
+     margin: 0;} /* remove as margens padrão do navegador
+
+     /* CONFIGURAÇÃO GERAL*/
+     .conteiner {
+        max-width: 400px;/*limita a largura*/
+        margin: auto; /* centralizar*/
+
+     }
+     /* Topo: Estiliza o cabecalho azul no topo */
+.topo {background: #670a0a;
+         color: white;
+        padding: 20px; /*Espaçamento para nao grudar nas bordas */
+
+
+        /*bordas arredondadas estilo app*/
+        border-bottom-left-radius:20px ;
+        border-bottom-right-radius: 20px; 
+     }
+
+
+.saldo {
+    background: #670a0a;
+    color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+
+    /*FlexBox*/
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.acoes  { /*flexblox*/
+    display: flex;
+    gap: 10px; /* espaço entre botoes*/
+    margin: 20px;
+}
+
+button {
+     flex: 1; /* divide espaço igualmnente*/
+
+     padding: 15px;
+     background: #670a0a;
+     color: #f0f2f5;
+     border: none;
+     border-radius: 10px;
+
+     font-weight: bold;
+     cursor: pointer;
+}
+
+button {
+    display: block;/*Faz o botão ocupar a linha toda*/
+    width: 100%; /*Garante que o botao usa toda a largura disponivel*/
+    margin: 10px 0; /*fica um espaço de 10px entre os botoes*/ 
+    padding: 12px; /* altura intena do botao "toque mais facil" */
+    background:#670a0a ;
+    color: white;
+    border: none; /*remove a borda padrao do sistema*/
+    border-radius: 5px;/* Cantos levemente arredondados*/
+    cursor: pointer; /* Muda o mouse para a maozinha ao passar por cima*/
+}
+.transacoes {background: white;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+ 
+.item {background: white;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.card {background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; }
+.destaque {background: white;
+    border: 1px solid white;}
+
+
+/*RESPONSIVIDADE PARA CELULAR*/
+@media (max-width: 600px) {}/*Define que as regras serão aplicadas em ecrãs com largura maxima de 600px que é compativel para celulares*/
+
+    .container 
+    max-width: 100%;
+
+
+    .acoes
+    flex-direction: coluna;
+
+    .saldo {
+        flex-direction:column;
+        align-items: flex-start;
+        gap: 8px;
+
+    }
+
+    .item{
+        flex-direction: column;
+        gap: 4px;
+    }
