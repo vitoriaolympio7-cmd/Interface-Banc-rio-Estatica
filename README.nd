@@ -1,1 +1,18 @@
-meio
+# Banco Dev
+
+Projeto desenvolvido em HTML e CSS para estudo de estrutura, layout, responsividade e organização de páginas web.
+
+## Tecnologias Utilizadas
+- HTML
+- CSS3
+
+## Objetivo
+Criar uma interface inspirada em aplicativo bancário, com foco em organização visual e boas práticas básicas.
+
+## Estrutura
+- Cabeçalho com identificação do sistema
+- Bloco de saldo
+- Botões de ação
+- Lista de transações
+- Card informativo
+- Responsividade para celular
